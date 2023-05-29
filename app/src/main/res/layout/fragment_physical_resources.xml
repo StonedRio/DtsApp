@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PhysicalResourcesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/physical_resources_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_total_covered_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="Total Covered Area:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/total_covered_area_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:editable="false"
+            android:text="4536487 sq.m"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_total_covered_area" />
+
+
+
+
+        <TextView
+            android:id="@+id/textview_number_of_offices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="No. of Offices/Rooms:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_covered_area_edittext" />
+        <EditText
+            android:id="@+id/number_of_offices_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:editable="false"
+            android:text="400"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_number_of_offices" />
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_vehicle_info_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/number_of_offices_edittext">
+
+            <ImageView
+                android:id="@+id/vehicle_info_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/title_vehicle_info_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="Vehicle Info"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/vehicle_info_expand_icon"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_vehicle_info_details_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vehicle_info_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_vehicle_info_textview"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/title_vehicle_registeration_number"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Registration No. :"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_vehicle_registeration_number"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_model"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Model:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_model"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_vehicle_type"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Type:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_vehicle_type"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_owner"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Owner:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_owner"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_vehicle_registeration_number"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_vehicle_registeration_number" />
+
+                <TextView
+                    android:id="@+id/textview_model"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Aqua"
+                    app:layout_constraintTop_toBottomOf="@id/textview_vehicle_registeration_number"
+                    app:layout_constraintLeft_toRightOf="@id/title_model" />
+
+                <TextView
+                    android:id="@+id/textview_vehicle_type"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Sedan"
+                    app:layout_constraintTop_toBottomOf="@id/textview_model"
+                    app:layout_constraintLeft_toRightOf="@id/title_vehicle_type" />
+
+                <TextView
+                    android:id="@+id/textview_owner"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Laal e Batakh Shah"
+                    app:layout_constraintTop_toBottomOf="@id/textview_vehicle_type"
+                    app:layout_constraintLeft_toRightOf="@id/title_owner" />
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_it_device_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_vehicle_info_cardview">
+
+            <ImageView
+                android:id="@+id/it_device_details_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/title_it_device_details_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="IT Device Details"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/it_device_details_expand_icon"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cl_it_device_details_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/it_device_details_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_it_device_details_textview"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:id="@+id/title_number_of_computers"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Computers:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_number_of_computers"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_textview_number_of_printers"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Printers"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_number_of_printers"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_dsl"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="DSL"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_dsl"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_number_of_computers"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="23"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_number_of_computers" />
+
+                <TextView
+                    android:id="@+id/textview_number_of_printers"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="12"
+                    app:layout_constraintTop_toBottomOf="@id/textview_number_of_computers"
+                    app:layout_constraintLeft_toRightOf="@id/title_textview_number_of_printers" />
+
+                <TextView
+                    android:id="@+id/textview_dsl"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="4MB"
+                    app:layout_constraintTop_toBottomOf="@id/textview_number_of_printers"
+                    app:layout_constraintLeft_toRightOf="@id/title_dsl" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_branch_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_it_device_details">
+
+            <ImageView
+                android:id="@+id/branch_details_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/title_branch_details_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="Branch Details"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/branch_details_expand_icon"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cl_branch_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/branch_details_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_branch_details_textview"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:id="@+id/title_branch_name"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Name:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_branch_name"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_textview_address"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_address"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_contact_person"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Person:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_contact_person"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_telephone"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_telephone"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_mobile_no"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_mobile_no"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_branch_name"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Town"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_branch_name" />
+
+                <TextView
+                    android:id="@+id/textview_address"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="xyz,abc,asdf"
+                    app:layout_constraintTop_toBottomOf="@id/textview_branch_name"
+                    app:layout_constraintLeft_toRightOf="@id/title_textview_address" />
+
+                <TextView
+                    android:id="@+id/textview_contact_person"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="asdf"
+                    app:layout_constraintTop_toBottomOf="@id/textview_address"
+                    app:layout_constraintLeft_toRightOf="@id/title_contact_person" />
+
+                <TextView
+                    android:id="@+id/textview_telephone"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="0945 804354"
+                    app:layout_constraintTop_toBottomOf="@id/textview_contact_person"
+                    app:layout_constraintLeft_toRightOf="@id/title_telephone" />
+
+                <TextView
+                    android:id="@+id/textview_mobile_no"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="0345 8043543"
+                    app:layout_constraintTop_toBottomOf="@id/textview_telephone"
+                    app:layout_constraintLeft_toRightOf="@id/title_mobile_no" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_employee_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_branch_details">
+
+            <ImageView
+                android:id="@+id/employee_details_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/title_employee_details_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="Employee Details"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/employee_details_expand_icon"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cl_employee_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/employee_details_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_employee_details_textview"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:id="@+id/title_employee_name"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Name:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_employee_name"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_branch"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Branch:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_branch"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_designation"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Designation:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_designation"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_cnic"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="CNIC:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_cnic"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_qualification"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Qualification:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_qualification"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_contact_number"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_contact_number"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_employee_name"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Osama"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_employee_name" />
+
+                <TextView
+                    android:id="@+id/textview_branch"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Town Branch"
+                    app:layout_constraintTop_toBottomOf="@id/textview_employee_name"
+                    app:layout_constraintLeft_toRightOf="@id/title_branch" />
+
+                <TextView
+                    android:id="@+id/textview_designation"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Manager"
+                    app:layout_constraintTop_toBottomOf="@id/textview_branch"
+                    app:layout_constraintLeft_toRightOf="@id/title_designation" />
+
+                <TextView
+                    android:id="@+id/textview_cnic"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="15405-4757534-2"
+                    app:layout_constraintTop_toBottomOf="@id/textview_designation"
+                    app:layout_constraintLeft_toRightOf="@id/title_cnic" />
+
+                <TextView
+                    android:id="@+id/textview_qualification"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="BS(cs)"
+                    app:layout_constraintTop_toBottomOf="@id/textview_cnic"
+                    app:layout_constraintLeft_toRightOf="@id/title_qualification" />
+
+                <TextView
+                    android:id="@+id/textview_contact_number"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="0345 8043543"
+                    app:layout_constraintTop_toBottomOf="@id/textview_qualification"
+                    app:layout_constraintLeft_toRightOf="@id/title_contact_number" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

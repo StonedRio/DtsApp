@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/remarks_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_contact_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Person:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/profile_icon"/>
+        <EditText
+            android:id="@+id/contact_person_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Osama"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_contact_person"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+        <ImageView
+            android:id="@+id/designation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_designation"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/contact_person_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/contact_person_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/designation_icon"/>
+        <EditText
+            android:id="@+id/designation_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_designation"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/designation_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/designation_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/phone_icon"/>
+        <EditText
+            android:id="@+id/mobile_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+923443586754"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_mobile_number"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/whatsapp_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_whatsapp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/mobile_number_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_whatsapp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whatsapp ID:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/mobile_number_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/whatsapp_icon"/>
+        <EditText
+            android:id="@+id/whatsapp_id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_whatsapp_id"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/skype_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skype"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/whatsapp_id_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_skype_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skype ID:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/whatsapp_id_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/skype_icon"/>
+        <EditText
+            android:id="@+id/skype_id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_skype_id"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

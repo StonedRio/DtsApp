@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="scroll view with nested elements"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PendingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/icon_hamburger_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hamburger_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending Application"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/icon_notification"
+            app:layout_constraintStart_toEndOf="@+id/icon_hamburger_menu" />
+
+        <ImageView
+            android:id="@+id/icon_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_bg"
+            android:searchIcon="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_application_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchView">
+
+            <ImageView
+                android:id="@+id/expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/visible_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="Inspection End Date:"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/expand_icon"/>
+
+            <TextView
+                android:id="@+id/visible_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="10 Jul 2023"
+                android:textColor="@color/green"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@id/visible_textview1"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/application_details_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/expand_icon"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/title_businessname"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Business Name:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_business_name"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_businesstype"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Business Type:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_business_type"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_inspectionenddate"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Inspection End Date:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_end_date"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_applicationtype"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Application Type:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_application_type"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_remarks"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Remarks:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_remarks"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_action"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Action:"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_remarks" />
+
+
+                <TextView
+                    android:id="@+id/textview_business_name"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Adnan Travel and Tours"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_businessname" />
+
+                <TextView
+                    android:id="@+id/textview_business_type"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Travel Agency"
+                    app:layout_constraintTop_toBottomOf="@id/textview_business_name"
+                    app:layout_constraintLeft_toRightOf="@id/title_businesstype" />
+
+                <TextView
+                    android:id="@+id/textview_end_date"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="April 12 2023"
+                    app:layout_constraintStart_toEndOf="@+id/title_inspectionenddate"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_business_type" />
+
+                <TextView
+                    android:id="@+id/textview_application_type"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="New"
+                    app:layout_constraintStart_toEndOf="@+id/title_applicationtype"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_end_date" />
+
+                <TextView
+                    android:id="@+id/textview_remarks"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="For Inspection"
+                    app:layout_constraintStart_toEndOf="@+id/title_remarks"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_application_type" />
+
+                <ImageView
+                    android:id="@+id/icon_details"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/ic_view_details"
+                    app:layout_constraintStart_toEndOf="@+id/title_action"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_remarks" />
+
+                    <ImageView
+                        android:id="@+id/icon_create_pdf"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_create_pdf"
+                        app:layout_constraintStart_toEndOf="@+id/icon_details"
+                        app:layout_constraintTop_toBottomOf="@+id/textview_remarks" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

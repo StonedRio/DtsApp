@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BusinessScopeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/business_scope_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_main_office_business_scope_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/main_office_business_scope_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/title_main_office_business_scope_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="Main Office Business Scope"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/main_office_business_scope_expand_icon"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_main_office_business_scope_details_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/main_office_business_scope_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_main_office_business_scope_textview"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/title_main_office_scope"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Scope:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_main_office_scope"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_registration_fee"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Fee:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_registration_fee"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_main_office_scope"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_main_office_scope" />
+
+                <TextView
+                    android:id="@+id/textview_registration_fee"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-"
+                    app:layout_constraintTop_toBottomOf="@id/textview_main_office_scope"
+                    app:layout_constraintLeft_toRightOf="@id/title_registration_fee" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_main_guarantee_business_scope_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_main_office_business_scope_cardview">
+
+            <ImageView
+                android:id="@+id/main_guarantee_business_scope_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_arrow_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/title_main_guarantee_business_scope_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Main Guarantee Business Scope"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/main_guarantee_business_scope_expand_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_main_guarantee_business_scope_details_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/main_guarantee_business_scope_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_main_guarantee_business_scope_textview">
+
+
+                <TextView
+                    android:id="@+id/title_main_guarantee_scope"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Scope:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_main_guarantee_scope"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_main_guarantee_fee"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Guarantee Fee:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_main_guarantee_fee"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textview_main_guarantee_scope"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="_"
+                    app:layout_constraintLeft_toRightOf="@id/title_main_guarantee_scope"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textview_main_guarantee_fee"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-"
+                    app:layout_constraintLeft_toRightOf="@id/title_main_guarantee_fee"
+                    app:layout_constraintTop_toBottomOf="@id/textview_main_guarantee_scope" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_branch_business_scope_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_main_guarantee_business_scope_cardview">
+
+            <ImageView
+                android:id="@+id/branch_business_scope_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_arrow_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/title_branch_business_scope_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Branch Business Scope"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/branch_business_scope_expand_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_branch_business_scope_details_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/branch_business_scope_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_branch_business_scope_textview">
+
+
+                <TextView
+                    android:id="@+id/title_branch_scope"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Scope:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_branch_scope"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_head_office_renewal_fee"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Head Office Renewal Fee:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_head_office_renewal_fee"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_total_branches"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Branches:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_total_branches"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+                <TextView
+                    android:id="@+id/title_total_fee"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Fee:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_total_fee"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_branch_scope"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="_"
+                    app:layout_constraintLeft_toRightOf="@id/title_branch_scope"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textview_head_office_renewal_fee"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="35k"
+                    app:layout_constraintLeft_toRightOf="@id/title_head_office_renewal_fee"
+                    app:layout_constraintTop_toBottomOf="@id/textview_branch_scope" />
+                <TextView
+                    android:id="@+id/textview_total_branches"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="8"
+                    app:layout_constraintLeft_toRightOf="@id/title_total_branches"
+                    app:layout_constraintTop_toBottomOf="@id/textview_head_office_renewal_fee" />
+                <TextView
+                    android:id="@+id/textview_total_fee"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="83k"
+                    app:layout_constraintLeft_toRightOf="@id/title_total_fee"
+                    app:layout_constraintTop_toBottomOf="@id/textview_total_branches" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_guarantee_business_scope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_branch_business_scope_cardview">
+
+            <ImageView
+                android:id="@+id/guarantee_business_scope_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_arrow_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/title_guarantee_business_scope_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Guarantee Business Scope"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/guarantee_business_scope_expand_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_guarantee_business_scope_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guarantee_business_scope_expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/title_guarantee_business_scope_textview">
+
+
+                <TextView
+                    android:id="@+id/title_guarantee_scope"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Scope:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_guarantee_scope"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_guarantee_fee"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Guarantee Fee:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_guarantee_fee"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_guarantee_scope"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="_"
+                    app:layout_constraintLeft_toRightOf="@id/title_guarantee_scope"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textview_guarantee_fee"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-"
+                    app:layout_constraintLeft_toRightOf="@id/title_guarantee_fee"
+                    app:layout_constraintTop_toBottomOf="@id/textview_guarantee_scope" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BasicInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/remarks_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_submitted_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submitted By:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/profile_icon"/>
+        <EditText
+            android:id="@+id/submitted_by_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Osama"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_submitted_by"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/calender_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_small_calendar"
+            app:layout_constraintTop_toBottomOf="@+id/submitted_by_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_submitted_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submitted Date:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/submitted_by_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/calender_icon"/>
+        <EditText
+            android:id="@+id/submitted_date_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/03/2023"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_submitted_date"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/district_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_district"
+            app:layout_constraintTop_toBottomOf="@+id/submitted_date_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="District:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/submitted_date_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/district_icon"/>
+        <EditText
+            android:id="@+id/district_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peshawar"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_district"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/head_office_address_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintTop_toBottomOf="@+id/district_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_head_office_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Head Office Address:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/district_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/head_office_address_icon"/>
+        <EditText
+            android:id="@+id/head_office_address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lalazar, University Campus"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_head_office_address"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/postal_address_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_location"
+            app:layout_constraintTop_toBottomOf="@+id/head_office_address_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_postal_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postal Address:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/head_office_address_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/postal_address_icon"/>
+        <EditText
+            android:id="@+id/postal_address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lalazar, University Campus"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_postal_address"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/contact_number_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintTop_toBottomOf="@+id/postal_address_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/postal_address_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/contact_number_icon"/>
+        <EditText
+            android:id="@+id/contact_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+923444576854"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_contact_number"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/business_website_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_website"
+            app:layout_constraintTop_toBottomOf="@+id/contact_number_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_business_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Website:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/contact_number_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/business_website_icon"/>
+        <EditText
+            android:id="@+id/business_website_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="www.asdf.com"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_business_website"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/business_email_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_email"
+            app:layout_constraintTop_toBottomOf="@+id/business_website_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_business_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Email:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@id/business_website_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/business_email_icon"/>
+        <EditText
+            android:id="@+id/business_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aflatoon@gmail.com"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_business_email"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

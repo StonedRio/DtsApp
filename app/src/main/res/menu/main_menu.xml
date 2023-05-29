@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showin="navigation_view">
+
+    <item android:title="Applications"/>
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/pending"
+                    android:icon="@drawable/ic_pending"
+                    android:title="Pending"/>
+
+                <item android:id="@+id/inspected"
+                    android:icon="@drawable/ic_inspected"
+                    android:title="Inspected"/>
+
+                <item android:id="@+id/recomended"
+                    android:icon="@drawable/ic_recomended"
+                    android:title="Recomended"/>
+
+                <item android:id="@+id/not_recomended"
+                    android:icon="@drawable/ic_not_recomended"
+                    android:title="Not Recomended"/>
+            </group>
+
+    <item android:title="General">
+
+        <menu>
+            <item android:id="@+id/about_us"
+                android:icon="@drawable/ic_about"
+                android:title="About us"/>
+
+            <item android:id="@+id/facebook"
+                android:icon="@drawable/ic_feedback"
+                android:title="Facebook"/>
+
+            <item android:id="@+id/rate_us"
+                android:icon="@drawable/ic_rate_us"
+                android:title="Rate Us"/>
+
+            <item android:id="@+id/invite_a_Friend"
+                android:icon="@drawable/ic_invite_a_friend"
+                android:title="Invite a Friend"/>
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FinancialInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/financial_info_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/rupees_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rupees"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/textview_authorized_capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authorized Capital Rupees:"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/rupees_icon"/>
+    <EditText
+        android:id="@+id/authorized_capital_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4536487"
+        android:editable="false"
+        android:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@+id/textview_authorized_capital"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/rupees_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rupees"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/authorized_capital_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_total_asset_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Asset Value Rupees:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/authorized_capital_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/rupees_icon2"/>
+        <EditText
+            android:id="@+id/total_asset_value_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45364873"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_total_asset_value"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/total_asset_value_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_auditors_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auditors Name:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/total_asset_value_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/profile_icon"/>
+        <EditText
+            android:id="@+id/auditors_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Osama"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_auditors_name"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/auditors_name_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_auditors_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auditors Contact:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/auditors_name_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/phone_icon"/>
+        <EditText
+            android:id="@+id/auditors_contact_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+923458675845"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_auditors_contact"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/website_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_website"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/auditors_contact_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_auditors_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auditors Website:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/auditors_contact_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/website_icon"/>
+        <EditText
+            android:id="@+id/auditors_website_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="www.matasapatada.com"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_auditors_website"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/email_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/auditors_website_edittext"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/textview_auditors_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auditors Email:"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/auditors_website_edittext"
+            app:layout_constraintLeft_toRightOf="@+id/email_icon"/>
+        <EditText
+            android:id="@+id/auditors_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdf@gmail.com"
+            android:editable="false"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/textview_auditors_email"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_bank_details_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_4sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/auditors_email_edittext">
+
+            <ImageView
+                android:id="@+id/expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="@drawable/ic_ellipse"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/visible_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:text="Bank Details"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/expand_icon"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cl_bank_details_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/expand_icon"
+                app:layout_constraintTop_toBottomOf="@id/visible_textview"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/title_ownership_type"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Ownership Type:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_ownership_type"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_name"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_designation"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Designation:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_designation"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_cnic"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="CINC:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_cnic"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_share"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Share %:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_share"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_contact_no"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_contact_no"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_email"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textview_email"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textview_ownership_type"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Sole Proprietorship"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/title_ownership_type" />
+
+                <TextView
+                    android:id="@+id/textview_name"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Osama"
+                    app:layout_constraintTop_toBottomOf="@id/textview_ownership_type"
+                    app:layout_constraintLeft_toRightOf="@id/title_name" />
+
+                <TextView
+                    android:id="@+id/textview_designation"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Manager"
+                    app:layout_constraintTop_toBottomOf="@id/textview_name"
+                    app:layout_constraintLeft_toRightOf="@id/title_designation" />
+
+                <TextView
+                    android:id="@+id/textview_cnic"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="15302-0596843-9"
+                    app:layout_constraintTop_toBottomOf="@id/textview_designation"
+                    app:layout_constraintLeft_toRightOf="@id/title_cnic" />
+
+                <TextView
+                    android:id="@+id/textview_share"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="100"
+                    app:layout_constraintTop_toBottomOf="@id/textview_cnic"
+                    app:layout_constraintLeft_toRightOf="@id/title_share" />
+
+                <TextView
+                    android:id="@+id/textview_contact_no"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="+923444304921"
+                    app:layout_constraintTop_toBottomOf="@id/textview_share"
+                    app:layout_constraintLeft_toRightOf="@id/title_contact_no" />
+
+                <TextView
+                    android:id="@+id/textview_email"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="imadkhanzsw@gmail.com"
+                    app:layout_constraintTop_toBottomOf="@id/title_contact_no"
+                    app:layout_constraintLeft_toRightOf="@id/title_email" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

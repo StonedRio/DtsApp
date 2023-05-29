@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RemarksFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/remarks_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/visit_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_select_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/visit_date_textview"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar"
+                android:layout_margin="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/04/1997"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner_date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/visit_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Time"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/cv_select_date"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_select_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/visit_time_textview"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock"
+                android:layout_margin="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:33"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_35sdp"/>
+
+
+            <Spinner
+                android:id="@+id/spinner_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/application_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Remarks"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/cv_select_time"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_application_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/application_remarks"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_10sdp"
+                >
+                <TextView
+                    android:id="@+id/application_remarks_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text"/>
+
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Email"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            app:cornerRadius="@dimen/_5sdp"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@+id/cv_application_remarks"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate PDF"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            app:cornerRadius="@dimen/_5sdp"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintTop_toBottomOf="@+id/cv_application_remarks"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
