@@ -23,6 +23,7 @@
             app:titleTextColor="@color/white"
             android:background="@color/green"
             android:elevation="3dp"
+            android:visibility="visible"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
 

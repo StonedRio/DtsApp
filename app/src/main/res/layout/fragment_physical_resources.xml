@@ -78,7 +78,7 @@
                 android:id="@+id/vehicle_info_expand_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_down"
+                android:src="@drawable/ic_arrow_up"
                 android:background="@drawable/ic_ellipse"
                 android:padding="@dimen/_5sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -105,8 +105,7 @@
                 android:paddingBottom="@dimen/_10sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/vehicle_info_expand_icon"
-                app:layout_constraintTop_toBottomOf="@id/title_vehicle_info_textview"
-                android:visibility="gone">
+                app:layout_constraintTop_toBottomOf="@id/title_vehicle_info_textview">
 
 
                 <TextView
@@ -142,50 +141,44 @@
                     app:layout_constraintLeft_toLeftOf="parent" />
 
 
-
-
-
-
-
-
                 <TextView
                     android:id="@+id/textview_vehicle_registeration_number"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:text="_"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/title_vehicle_registeration_number" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_vehicle_registeration_number"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textview_model"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Aqua"
-                    app:layout_constraintTop_toBottomOf="@id/textview_vehicle_registeration_number"
-                    app:layout_constraintLeft_toRightOf="@id/title_model" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_model"
+                    app:layout_constraintTop_toBottomOf="@id/textview_vehicle_registeration_number" />
 
                 <TextView
                     android:id="@+id/textview_vehicle_type"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Sedan"
-                    app:layout_constraintTop_toBottomOf="@id/textview_model"
-                    app:layout_constraintLeft_toRightOf="@id/title_vehicle_type" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_vehicle_type"
+                    app:layout_constraintTop_toBottomOf="@id/textview_model" />
 
                 <TextView
                     android:id="@+id/textview_owner"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Laal e Batakh Shah"
-                    app:layout_constraintTop_toBottomOf="@id/textview_vehicle_type"
-                    app:layout_constraintLeft_toRightOf="@id/title_owner" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_owner"
+                    app:layout_constraintTop_toBottomOf="@id/textview_vehicle_type" />
 
 
 
@@ -267,39 +260,34 @@
                     app:layout_constraintLeft_toLeftOf="parent" />
 
 
-
-
-
-
-
                 <TextView
                     android:id="@+id/textview_number_of_computers"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:text="23"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/title_number_of_computers" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_number_of_computers"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textview_number_of_printers"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="12"
-                    app:layout_constraintTop_toBottomOf="@id/textview_number_of_computers"
-                    app:layout_constraintLeft_toRightOf="@id/title_textview_number_of_printers" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_textview_number_of_printers"
+                    app:layout_constraintTop_toBottomOf="@id/textview_number_of_computers" />
 
                 <TextView
                     android:id="@+id/textview_dsl"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="4MB"
-                    app:layout_constraintTop_toBottomOf="@id/textview_number_of_printers"
-                    app:layout_constraintLeft_toRightOf="@id/title_dsl" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_dsl"
+                    app:layout_constraintTop_toBottomOf="@id/textview_number_of_printers" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -391,59 +379,54 @@
                     app:layout_constraintLeft_toLeftOf="parent" />
 
 
-
-
-
-
-
                 <TextView
                     android:id="@+id/textview_branch_name"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:text="Town"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/title_branch_name" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_branch_name"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textview_address"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="xyz,abc,asdf"
-                    app:layout_constraintTop_toBottomOf="@id/textview_branch_name"
-                    app:layout_constraintLeft_toRightOf="@id/title_textview_address" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_textview_address"
+                    app:layout_constraintTop_toBottomOf="@id/textview_branch_name" />
 
                 <TextView
                     android:id="@+id/textview_contact_person"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="asdf"
-                    app:layout_constraintTop_toBottomOf="@id/textview_address"
-                    app:layout_constraintLeft_toRightOf="@id/title_contact_person" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_contact_person"
+                    app:layout_constraintTop_toBottomOf="@id/textview_address" />
 
                 <TextView
                     android:id="@+id/textview_telephone"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="0945 804354"
-                    app:layout_constraintTop_toBottomOf="@id/textview_contact_person"
-                    app:layout_constraintLeft_toRightOf="@id/title_telephone" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_telephone"
+                    app:layout_constraintTop_toBottomOf="@id/textview_contact_person" />
 
                 <TextView
                     android:id="@+id/textview_mobile_no"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="0345 8043543"
-                    app:layout_constraintTop_toBottomOf="@id/textview_telephone"
-                    app:layout_constraintLeft_toRightOf="@id/title_mobile_no" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_mobile_no"
+                    app:layout_constraintTop_toBottomOf="@id/textview_telephone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -542,69 +525,64 @@
                     app:layout_constraintLeft_toLeftOf="parent" />
 
 
-
-
-
-
-
                 <TextView
                     android:id="@+id/textview_employee_name"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:text="Osama"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/title_employee_name" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_employee_name"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textview_branch"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Town Branch"
-                    app:layout_constraintTop_toBottomOf="@id/textview_employee_name"
-                    app:layout_constraintLeft_toRightOf="@id/title_branch" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_branch"
+                    app:layout_constraintTop_toBottomOf="@id/textview_employee_name" />
 
                 <TextView
                     android:id="@+id/textview_designation"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Manager"
-                    app:layout_constraintTop_toBottomOf="@id/textview_branch"
-                    app:layout_constraintLeft_toRightOf="@id/title_designation" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_designation"
+                    app:layout_constraintTop_toBottomOf="@id/textview_branch" />
 
                 <TextView
                     android:id="@+id/textview_cnic"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="15405-4757534-2"
-                    app:layout_constraintTop_toBottomOf="@id/textview_designation"
-                    app:layout_constraintLeft_toRightOf="@id/title_cnic" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_cnic"
+                    app:layout_constraintTop_toBottomOf="@id/textview_designation" />
 
                 <TextView
                     android:id="@+id/textview_qualification"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="BS(cs)"
-                    app:layout_constraintTop_toBottomOf="@id/textview_cnic"
-                    app:layout_constraintLeft_toRightOf="@id/title_qualification" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_qualification"
+                    app:layout_constraintTop_toBottomOf="@id/textview_cnic" />
 
                 <TextView
                     android:id="@+id/textview_contact_number"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="0345 8043543"
-                    app:layout_constraintTop_toBottomOf="@id/textview_qualification"
-                    app:layout_constraintLeft_toRightOf="@id/title_contact_number" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_contact_number"
+                    app:layout_constraintTop_toBottomOf="@id/textview_qualification" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

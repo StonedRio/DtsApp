@@ -18,9 +18,12 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
     ConstraintLayout constraintLayout;
@@ -41,11 +44,14 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView =findViewById(R.id.nav_view);
 
+        toolbar.setVisibility(View.GONE);
+        ReplaceFragment(new HomeFragment());
+
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
+
 
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

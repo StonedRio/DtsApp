@@ -49,6 +49,7 @@
             android:layout_marginTop="@dimen/_20sdp"
             app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
             app:tabSelectedTextColor="@color/black"
+            app:tabIndicator="@drawable/dot_tab_indicator"
             app:tabIndicatorColor="@color/green"
             app:tabIndicatorFullWidth="true"
             app:layout_constraintTop_toBottomOf="@+id/title"

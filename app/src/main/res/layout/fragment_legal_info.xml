@@ -153,7 +153,7 @@
                 android:id="@+id/expand_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_down"
+                android:src="@drawable/ic_arrow_up"
                 android:background="@drawable/ic_ellipse"
                 android:padding="@dimen/_5sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -180,8 +180,7 @@
                 android:paddingBottom="@dimen/_10sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/expand_icon"
-                app:layout_constraintTop_toBottomOf="@id/visible_textview"
-                android:visibility="gone">
+                app:layout_constraintTop_toBottomOf="@id/visible_textview">
 
 
                 <TextView
@@ -241,79 +240,74 @@
                     app:layout_constraintLeft_toLeftOf="parent" />
 
 
-
-
-
-
-
                 <TextView
                     android:id="@+id/textview_ownership_type"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:text="Sole Proprietorship"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toRightOf="@id/title_ownership_type" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_ownership_type"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textview_name"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Osama"
-                    app:layout_constraintTop_toBottomOf="@id/textview_ownership_type"
-                    app:layout_constraintLeft_toRightOf="@id/title_name" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_name"
+                    app:layout_constraintTop_toBottomOf="@id/textview_ownership_type" />
 
                 <TextView
                     android:id="@+id/textview_designation"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Manager"
-                    app:layout_constraintTop_toBottomOf="@id/textview_name"
-                    app:layout_constraintLeft_toRightOf="@id/title_designation" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_designation"
+                    app:layout_constraintTop_toBottomOf="@id/textview_name" />
 
                 <TextView
-                android:id="@+id/textview_cnic"
-                android:layout_width="@dimen/_120sdp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:text="15302-0596843-9"
-                app:layout_constraintTop_toBottomOf="@id/textview_designation"
-                app:layout_constraintLeft_toRightOf="@id/title_cnic" />
+                    android:id="@+id/textview_cnic"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="15302-0596843-9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_cnic"
+                    app:layout_constraintTop_toBottomOf="@id/textview_designation" />
 
                 <TextView
                     android:id="@+id/textview_share"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="100"
-                    app:layout_constraintTop_toBottomOf="@id/textview_cnic"
-                    app:layout_constraintLeft_toRightOf="@id/title_share" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_share"
+                    app:layout_constraintTop_toBottomOf="@id/textview_cnic" />
 
                 <TextView
                     android:id="@+id/textview_contact_no"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="+923444304921"
-                    app:layout_constraintTop_toBottomOf="@id/textview_share"
-                    app:layout_constraintLeft_toRightOf="@id/title_contact_no" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_contact_no"
+                    app:layout_constraintTop_toBottomOf="@id/textview_share" />
 
                 <TextView
                     android:id="@+id/textview_email"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="imadkhanzsw@gmail.com"
-                    app:layout_constraintTop_toBottomOf="@id/title_contact_no"
-                    app:layout_constraintLeft_toRightOf="@id/title_email" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/title_email"
+                    app:layout_constraintTop_toBottomOf="@id/title_contact_no" />
 
 
 

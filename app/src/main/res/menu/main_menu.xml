@@ -3,25 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showin="navigation_view">
 
-    <item android:title="Applications"/>
-            <group android:checkableBehavior="single">
 
-                <item android:id="@+id/pending"
-                    android:icon="@drawable/ic_pending"
-                    android:title="Pending"/>
+    <item android:title="Application">
+        <menu>
 
-                <item android:id="@+id/inspected"
-                    android:icon="@drawable/ic_inspected"
-                    android:title="Inspected"/>
+            <item android:id="@+id/pending"
+                android:icon="@drawable/ic_pending"
+                android:title="Pending"/>
 
-                <item android:id="@+id/recomended"
-                    android:icon="@drawable/ic_recomended"
-                    android:title="Recomended"/>
+            <item android:id="@+id/inspected"
+                android:icon="@drawable/ic_inspected"
+                android:title="Inspected"/>
 
-                <item android:id="@+id/not_recomended"
-                    android:icon="@drawable/ic_not_recomended"
-                    android:title="Not Recomended"/>
-            </group>
+            <item android:id="@+id/recomended"
+                android:icon="@drawable/ic_recomended"
+                android:title="Recomended"/>
+
+            <item android:id="@+id/not_recomended"
+                android:icon="@drawable/ic_not_recomended"
+                android:title="Not Recomended"/>
+        </menu>
+    </item>
 
     <item android:title="General">
 

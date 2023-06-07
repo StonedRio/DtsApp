@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AllAppSummaryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20sdp">
+
+
+    <ImageView
+        android:id="@+id/icon_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Applications Summary"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/icon_notification"
+        app:layout_constraintStart_toEndOf="@+id/icon_arrow_back" />
+
+    <ImageView
+        android:id="@+id/icon_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+
+        <View
+            android:id="@+id/rectangle1"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/round_bg_blue"
+            android:backgroundTint="#ef5780"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pie_chart" />
+        <TextView
+            android:id="@+id/overdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Over Due Date: "
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle1"
+            app:layout_constraintStart_toEndOf="@+id/rectangle1"
+            app:layout_constraintTop_toTopOf="@+id/rectangle1" />
+        <TextView
+            android:id="@+id/over_date_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/overdate"
+            app:layout_constraintStart_toEndOf="@+id/overdate" />
+
+
+
+
+        <View
+            android:id="@+id/rectangle2"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/round_bg_blue"
+            android:backgroundTint="#8a447b"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle1" />
+        <TextView
+            android:id="@+id/thisweekk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="This Week: "
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle2"
+            app:layout_constraintStart_toEndOf="@+id/rectangle2"
+            app:layout_constraintTop_toTopOf="@+id/rectangle2" />
+        <TextView
+            android:id="@+id/this_week_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/thisweekk"
+            app:layout_constraintStart_toEndOf="@+id/thisweekk" />
+
+
+
+
+        <View
+            android:id="@+id/rectangle3"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/round_bg_blue"
+            android:backgroundTint="#5d336a"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle2" />
+        <TextView
+            android:id="@+id/inprocess"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="In Process: "
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle3"
+            app:layout_constraintStart_toEndOf="@+id/rectangle3"
+            app:layout_constraintTop_toTopOf="@+id/rectangle3" />
+        <TextView
+            android:id="@+id/in_process_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/inprocess"
+            app:layout_constraintStart_toEndOf="@+id/inprocess" />
+
+
+
+        <View
+            android:id="@+id/rectangle4"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/round_bg_blue"
+            android:backgroundTint="#078aaa"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle3" />
+        <TextView
+            android:id="@+id/totalinspected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="Total Inspected: "
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle4"
+            app:layout_constraintStart_toEndOf="@+id/rectangle4"
+            app:layout_constraintTop_toTopOf="@+id/rectangle4" />
+        <TextView
+            android:id="@+id/total_inspected_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/totalinspected"
+            app:layout_constraintStart_toEndOf="@+id/totalinspected" />
+
+
+
+        <View
+            android:id="@+id/rectangle5"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/round_bg_blue"
+            android:backgroundTint="#27a783"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle4" />
+        <TextView
+            android:id="@+id/totalrecieved"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="Total Recieved: "
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle5"
+            app:layout_constraintStart_toEndOf="@+id/rectangle5"
+            app:layout_constraintTop_toTopOf="@+id/rectangle5" />
+        <TextView
+            android:id="@+id/total_recieved_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/totalrecieved"
+            app:layout_constraintStart_toEndOf="@+id/totalrecieved" />
+
+
+
+        <View
+            android:id="@+id/rectangle6"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/round_bg_blue"
+            android:backgroundTint="#96aa3b"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle5" />
+        <TextView
+            android:id="@+id/pending"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="Total Recieved: "
+            app:layout_constraintBottom_toBottomOf="@+id/rectangle6"
+            app:layout_constraintStart_toEndOf="@+id/rectangle6"
+            app:layout_constraintTop_toTopOf="@+id/rectangle6" />
+        <TextView
+            android:id="@+id/pending_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/pending"
+            app:layout_constraintStart_toEndOf="@+id/pending" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
