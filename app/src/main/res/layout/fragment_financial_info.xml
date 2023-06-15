@@ -249,7 +249,8 @@
 
                 <TextView
                     android:id="@+id/title_ownership_type"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Ownership Type:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_ownership_type"
@@ -257,7 +258,8 @@
 
                 <TextView
                     android:id="@+id/title_name"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Name:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_name"
@@ -265,7 +267,8 @@
 
                 <TextView
                     android:id="@+id/title_designation"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Designation:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_designation"
@@ -273,7 +276,8 @@
 
                 <TextView
                     android:id="@+id/title_cnic"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="CINC:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_cnic"
@@ -281,7 +285,8 @@
 
                 <TextView
                     android:id="@+id/title_share"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Share %:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_share"
@@ -289,7 +294,8 @@
 
                 <TextView
                     android:id="@+id/title_contact_no"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Contact No:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_contact_no"
@@ -297,7 +303,8 @@
 
                 <TextView
                     android:id="@+id/title_email"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Email:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_email"
@@ -306,7 +313,8 @@
 
                 <TextView
                     android:id="@+id/textview_ownership_type"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Sole Proprietorship"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -315,7 +323,8 @@
 
                 <TextView
                     android:id="@+id/textview_name"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Osama"
@@ -325,7 +334,8 @@
 
                 <TextView
                     android:id="@+id/textview_designation"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Manager"
@@ -335,7 +345,8 @@
 
                 <TextView
                     android:id="@+id/textview_cnic"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="15302-0596843-9"
@@ -345,7 +356,8 @@
 
                 <TextView
                     android:id="@+id/textview_share"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="100"
@@ -355,7 +367,8 @@
 
                 <TextView
                     android:id="@+id/textview_contact_no"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="+923444304921"
@@ -365,7 +378,8 @@
 
                 <TextView
                     android:id="@+id/textview_email"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="imadkhanzsw@gmail.com"

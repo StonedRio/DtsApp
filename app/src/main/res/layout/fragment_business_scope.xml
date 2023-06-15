@@ -59,7 +59,8 @@
 
                 <TextView
                     android:id="@+id/title_main_office_scope"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Scope:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_main_office_scope"
@@ -67,7 +68,8 @@
 
                 <TextView
                     android:id="@+id/title_registration_fee"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Registration Fee:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_registration_fee"
@@ -76,7 +78,8 @@
 
                 <TextView
                     android:id="@+id/textview_main_office_scope"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="_"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +88,8 @@
 
                 <TextView
                     android:id="@+id/textview_registration_fee"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="-"
@@ -145,7 +149,8 @@
 
                 <TextView
                     android:id="@+id/title_main_guarantee_scope"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Scope:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_main_guarantee_scope"
@@ -153,7 +158,8 @@
 
                 <TextView
                     android:id="@+id/title_main_guarantee_fee"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Guarantee Fee:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_main_guarantee_fee"
@@ -162,7 +168,8 @@
 
                 <TextView
                     android:id="@+id/textview_main_guarantee_scope"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="_"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -171,7 +178,8 @@
 
                 <TextView
                     android:id="@+id/textview_main_guarantee_fee"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="-"
@@ -231,28 +239,32 @@
 
                 <TextView
                     android:id="@+id/title_branch_scope"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Scope:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_branch_scope"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_head_office_renewal_fee"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Head Office Renewal Fee:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_head_office_renewal_fee"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_total_branches"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Total Branches:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_total_branches"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_total_fee"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Total Fee:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_total_fee"
@@ -261,7 +273,8 @@
 
                 <TextView
                     android:id="@+id/textview_branch_scope"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="_"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -270,7 +283,8 @@
 
                 <TextView
                     android:id="@+id/textview_head_office_renewal_fee"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="35k"
@@ -280,7 +294,8 @@
 
                 <TextView
                     android:id="@+id/textview_total_branches"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="8"
@@ -290,7 +305,8 @@
 
                 <TextView
                     android:id="@+id/textview_total_fee"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="83k"
@@ -351,7 +367,8 @@
 
                 <TextView
                     android:id="@+id/title_guarantee_scope"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Scope:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_guarantee_scope"
@@ -359,7 +376,8 @@
 
                 <TextView
                     android:id="@+id/title_guarantee_fee"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Guarantee Fee:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_guarantee_fee"
@@ -368,7 +386,8 @@
 
                 <TextView
                     android:id="@+id/textview_guarantee_scope"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="_"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -377,7 +396,8 @@
 
                 <TextView
                     android:id="@+id/textview_guarantee_fee"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="-"

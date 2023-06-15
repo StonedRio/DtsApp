@@ -110,7 +110,8 @@
 
                 <TextView
                     android:id="@+id/title_vehicle_registeration_number"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Vehicle Registration No. :"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_vehicle_registeration_number"
@@ -118,7 +119,8 @@
 
                 <TextView
                     android:id="@+id/title_model"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Model:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_model"
@@ -126,7 +128,8 @@
 
                 <TextView
                     android:id="@+id/title_vehicle_type"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Vehicle Type:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_vehicle_type"
@@ -134,7 +137,8 @@
 
                 <TextView
                     android:id="@+id/title_owner"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Owner:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_owner"
@@ -143,7 +147,8 @@
 
                 <TextView
                     android:id="@+id/textview_vehicle_registeration_number"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="_"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +157,8 @@
 
                 <TextView
                     android:id="@+id/textview_model"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Aqua"
@@ -162,7 +168,8 @@
 
                 <TextView
                     android:id="@+id/textview_vehicle_type"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Sedan"
@@ -172,7 +179,8 @@
 
                 <TextView
                     android:id="@+id/textview_owner"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Laal e Batakh Shah"
@@ -239,21 +247,24 @@
 
                 <TextView
                     android:id="@+id/title_number_of_computers"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Number of Computers:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_number_of_computers"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_textview_number_of_printers"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Number of Printers"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_number_of_printers"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_dsl"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="DSL"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_dsl"
@@ -262,7 +273,8 @@
 
                 <TextView
                     android:id="@+id/textview_number_of_computers"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="23"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -271,7 +283,8 @@
 
                 <TextView
                     android:id="@+id/textview_number_of_printers"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="12"
@@ -281,7 +294,8 @@
 
                 <TextView
                     android:id="@+id/textview_dsl"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="4MB"
@@ -344,35 +358,40 @@
 
                 <TextView
                     android:id="@+id/title_branch_name"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Branch Name:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_branch_name"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_textview_address"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Address:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_address"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_contact_person"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Contact Person:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_contact_person"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_telephone"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Telephone:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_telephone"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_mobile_no"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Mobile No:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_mobile_no"
@@ -381,7 +400,8 @@
 
                 <TextView
                     android:id="@+id/textview_branch_name"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Town"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -390,7 +410,8 @@
 
                 <TextView
                     android:id="@+id/textview_address"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="xyz,abc,asdf"
@@ -400,7 +421,8 @@
 
                 <TextView
                     android:id="@+id/textview_contact_person"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="asdf"
@@ -410,7 +432,8 @@
 
                 <TextView
                     android:id="@+id/textview_telephone"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="0945 804354"
@@ -420,7 +443,8 @@
 
                 <TextView
                     android:id="@+id/textview_mobile_no"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="0345 8043543"
@@ -483,42 +507,48 @@
 
                 <TextView
                     android:id="@+id/title_employee_name"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Employee Name:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_employee_name"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_branch"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Branch:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_branch"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_designation"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Designation:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_designation"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_cnic"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="CNIC:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_cnic"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_qualification"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Qualification:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_qualification"
                     app:layout_constraintLeft_toLeftOf="parent" />
                 <TextView
                     android:id="@+id/title_contact_number"
-                    android:layout_width="@dimen/_130sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Contact No:"
                     app:layout_constraintBaseline_toBaselineOf="@+id/textview_contact_number"
@@ -527,7 +557,8 @@
 
                 <TextView
                     android:id="@+id/textview_employee_name"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:text="Osama"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -536,7 +567,8 @@
 
                 <TextView
                     android:id="@+id/textview_branch"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Town Branch"
@@ -546,7 +578,8 @@
 
                 <TextView
                     android:id="@+id/textview_designation"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="Manager"
@@ -556,7 +589,8 @@
 
                 <TextView
                     android:id="@+id/textview_cnic"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="15405-4757534-2"
@@ -566,7 +600,8 @@
 
                 <TextView
                     android:id="@+id/textview_qualification"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="BS(cs)"
@@ -576,7 +611,8 @@
 
                 <TextView
                     android:id="@+id/textview_contact_number"
-                    android:layout_width="@dimen/_120sdp"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="0345 8043543"

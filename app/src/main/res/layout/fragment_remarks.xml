@@ -117,7 +117,8 @@
         </androidx.cardview.widget.CardView>
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.35"
             android:layout_height="wrap_content"
             android:text="Send Email"
             android:textSize="@dimen/_14sdp"
@@ -131,7 +132,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.35"
             android:layout_height="wrap_content"
             android:text="Generate PDF"
             android:textSize="@dimen/_14sdp"
